@@ -1,0 +1,62 @@
+#drawerButtonSlot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.appContainer {
+  display: block;
+  width: 100%;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px 20px 5px;
+  width: 100%;
+}
+
+.headerContainer .appHeader {
+  font-family: "Are You Serious", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  width: 400px;
+  text-align: center;
+  margin-left: -50px; /* Size of drawer button */
+}
+
+.headerContainer .appHeader > img {
+  padding: 0px 20px;
+  margin-bottom: -5px;
+}
+
+.headerContainer button {
+  margin: 3px 0px;
+  padding: 0px 9px;
+  margin-left: 5px;
+}
+
+.mainContent__shifted {
+  margin-left: 250px;
+  padding: 25px;
+}
+
+.mainContent__standard {
+  margin-left: 0px;
+  padding: 25px;
+}
+
+.footerContainer {
+  text-align: center;
+  padding: 20px 20px 0px;
+  margin-bottom: -10px;
+  font-family: Garamond, serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.unstyledLink {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.74);
+}
