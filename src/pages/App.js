@@ -44,7 +44,7 @@ function App() {
       >
         <Box>
           <div id="drawerButtonSlot">
-            <IconButton aria-label="Close navigation pane">
+            <IconButton sx={{ margin: "8px"}} aria-label="Close navigation pane">
               <ChevronLeftIcon onClick={() => setDrawerOpen(false)}/>
             </IconButton>
           </div>
@@ -72,8 +72,8 @@ function App() {
           <nav aria-label="Navigation Pane - Posts Log">
             <List>
               {postsReversed.map(({ title, date }, index) => (
-                <Link to="/" className="unstyledLink">
-                  <ListItem key={index} disablePadding>
+                <Link key={index} to="/" className="unstyledLink">
+                  <ListItem disablePadding>
                     <ListItemButton onClick={() => {
                       setPostIndex(postsReversed.length - index - 1);
                       setDrawerOpen(false);
@@ -95,9 +95,9 @@ function App() {
             <MenuIcon onClick={() => setDrawerOpen(true)} />
           </IconButton>
           <div class="appHeader">
-            <img src="../../header-violet-icon.png" height="32px" width="32px"/>
+            <img src="../../header-violet-icon.png" height="32px" width="32px" alt="Small decorative icon of a violet flower"/>
             Thing of the Week
-            <img src="../../header-violet-icon.png" height="32px" width="32px"/>
+            <img src="../../header-violet-icon.png" height="32px" width="32px" alt="Small decorative icon of a violet flower"/>
           </div>
           <div></div>  { /* Hack to allow justify-content: space-between */ }
         </div>
@@ -115,7 +115,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
 
-          <div class="footerContainer">Header icons designed by Freepik <a href="www.freepik.com">www.freepik.com</a></div>
+          <div class="footerContainer">Header icons designed by Freepik <a href="https://www.freepik.com">www.freepik.com</a></div>
         </Box>
       </div>
     </Box>

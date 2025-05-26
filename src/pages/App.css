@@ -1,6 +1,7 @@
 #drawerButtonSlot {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: -15px;
 }
 
 .appContainer {
@@ -13,7 +14,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 5px 20px 5px;
-  width: 100%;
 }
 
 .headerContainer .appHeader {
@@ -23,7 +23,7 @@
   font-style: normal;
   width: 400px;
   text-align: center;
-  margin-left: -50px; /* Size of drawer button */
+  margin-left: -44px; /* Size of drawer button */
 }
 
 .headerContainer .appHeader > img {
