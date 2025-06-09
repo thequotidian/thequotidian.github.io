@@ -12,11 +12,15 @@ export interface PostViewProps {
 }
 
 const mapBodyEntries = (entries: string[]): ReactElement[] => entries.map((p, index) => {
+  console.log(p)
   if (p.startsWith("LINK")) {
     const [_, displayText, url] = p.split("|");
     return (<p key={index} style={{ textAlign: "center" }}>
       <a href={url} target="_blank" rel="noopener noreferrer">{displayText}</a>
     </p>);
+  } else if (p.startsWith("QUOTE")) {
+    const [_, quoteText] = p.split("|");
+    return (<p key={index} style={{ textAlign: "center", fontStyle: "italic" }}>{quoteText}</p>);
   } else {
     return (<p key={index}>{p}</p>);
   }
